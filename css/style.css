@@ -1,0 +1,268 @@
+body {
+    background-color: darkcyan;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-body{
+    width: 100%;
+}
+
+#dark-change{
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    right: 20px;
+    top: 20px;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+#dark-change::before{
+   position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border: 1px solid;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #000;
+    transition: 0.4s;
+}
+
+#dark-change:active::before{
+    left: 24px !important;
+    background-color: #000 !important;
+}
+
+body.night{
+    background: rgb(0, 69, 69) !important; 
+    color: #000 !important;
+}
+
+#photo {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #000;
+}
+
+.container {
+    flex: 1;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.btn{
+    background-color: honeydew;
+    color: black;
+    border: cyan 3px;
+    font-weight: bold;
+    font-family: "Berlin Sans FB";
+}
+
+.btn:hover{
+    background-color: #d2d8d2;
+    color: hotpink;
+    border: darkcyan 3px;
+    font-family: "Berlin Sans FB";
+}
+
+.btn:active{
+    background-color: #d2d8d2;
+    color: hotpink;
+    border: darkcyan 3px;
+    font-family: "Berlin Sans FB";
+}
+
+
+.display-4{
+    color: hotpink;
+    padding: 10px;
+    font-family: "Berlin Sans FB";
+}
+
+.lead{
+    color: hotpink;
+    padding: 10px;
+    font-family: "Berlin Sans FB";
+    margin: 0;
+}
+
+.member-card {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.navbar-nav{
+    padding: 10px;
+    margin: 0;
+    font-family: "Berlin Sans FB";
+    font-size: 18px !important;
+}
+.navbar-brand{
+    color: black;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: honeydew !important;
+}
+
+.navbar-brand {
+    color: black !important;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: hotpink !important;
+    font-weight: bold;
+    transition: 1s;
+
+}
+
+.dark-mode{
+    background-color: black;
+    color: aliceblue;
+}
+
+#logo{
+    width: 100px;
+    height: auto;
+}
+
+.footer {
+    background: honeydew !important;
+    color: black;
+}
+
+.footer .text-muted {
+    color: black !important;
+}
+
+
+.nav-link {
+    color: black !important;
+}
+
+.nav-link:hover {
+    color: hotpink !important;
+    transition: 1s;
+}
+
+.card-body:hover{
+    box-shadow: 10px 10px !important;    
+    color: black;
+}
+
+.show:hover{
+    box-shadow: 10px 10px !important;
+}
+
+.pagination {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.page-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.page-numbers a {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    text-decoration: none;
+    color: darkcyan;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.resources {
+    display:block;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 45%;
+    padding: 15px;
+    margin: 10px;
+
+}
+
+a::href{
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+
+
+}
+
+.event {
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.event p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.event p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.joburi {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.joburi p {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+}
